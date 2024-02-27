@@ -1,0 +1,17 @@
+CN lab test portion: 
+1. CRC-----------------------------------------------------------------https://cl1p.net/cr------------cr
+2. Frame sorting-------------------------------------------------------https://cl1p.net/frs-----------frs
+3. Fifo----------------------------------------------------------------https://cl1p.net/fif-----------fif
+4. TCP client server---------------------------------------------------https://cl1p.net/tcpp----------tcpp
+5. UDP client server---------------------------------------------------https://cl1p.net/udpp----------udpp
+6. Link state  routing
+7. NS2 progtam with varying error rate and data rate 
+8. NS2 program with FTP and Telnet application  
+
+
+
+
+
+
+
+
