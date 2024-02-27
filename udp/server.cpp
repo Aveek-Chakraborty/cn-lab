@@ -7,7 +7,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     char buffer[MAX], msg[MAX];
     struct sockaddr_in servaddr, cliaddr;
 
@@ -28,12 +29,17 @@ int main() {
 
     socklen_t len = sizeof(cliaddr);
 
-    while (true) {
+    while (true)
+    {
+        // recv(sock, buffer, sizeof(buffer), 0);
+        // send(sock, msg, sizeof(msg), 0);
+        // 4 parameters
         int n = recvfrom(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&cliaddr, &len);
         buffer[n] = '\0';
         cout << "Client : " << buffer << endl; // Added endl
         cout << "Server : ";
         cin.getline(msg, MAX);
+        // fgets(msg, MAX, stdin);
         sendto(sock, msg, strlen(msg), 0, (const struct sockaddr *)&cliaddr, len);
     }
 
